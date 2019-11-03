@@ -1,0 +1,215 @@
+,country,beer,wine
+0,Uganda,5,95
+1,Bermuda,28,72
+2,Cayman Islands,28,72
+3,Jersey,28,72
+4,Turks & Caicos Islands,28,72
+5,Australia,38,62
+6,Guernsey,32,68
+7,United States,44,56
+8,Falkland Islands (Islas Malvinas),25,75
+9,New Zealand,38,62
+10,Malta,30,70
+11,Isle of Man,34,66
+12,Antigua & Barbuda,26,74
+13,United Kingdom,37,63
+14,South Africa,30,70
+15,Canada,51,49
+16,US Virgin Islands,36,64
+17,Anguilla,27,73
+18,Barbados,29,71
+19,Ireland,36,64
+20,Aruba,42,58
+21,British Virgin Islands,29,71
+22,Gibraltar,33,67
+23,Seychelles,32,68
+24,St Lucia,28,72
+25,Bahamas,31,69
+26,St Vincent & Grenadines,26,74
+27,St Kitts & Nevis,33,67
+28,Singapore,42,58
+29,Belize,40,60
+30,Iceland,60,40
+31,Trinidad & Tobago,29,71
+32,Sint Maarten,33,67
+33,Grenada,34,66
+34,Cook Islands,44,56
+35,Guyana,33,67
+36,Jamaica,24,76
+37,South Sudan,13,87
+39,Namibia,41,59
+40,Hong Kong,28,72
+41,Curaçao,35,65
+42,Guam,52,48
+43,Myanmar (Burma),38,62
+44,Vanuatu,39,61
+45,Cambodia,71,29
+46,Monaco,21,79
+47,Botswana,33,67
+48,Maldives,30,70
+49,Tonga,37,63
+50,Dominica,34,66
+51,Samoa,54,46
+52,St Helena,36,64
+53,Eswatini,37,63
+54,Lesotho,44,56
+55,Caribbean Netherlands,52,48
+56,Cyprus,39,61
+57,Fiji,42,58
+58,Macao,30,70
+59,Northern Mariana Islands,48,52
+60,American Samoa,42,58
+61,Kenya,34,66
+62,St Martin,32,68
+63,Bhutan,46,54
+64,Ghana,24,76
+65,Zambia,43,57
+66,Mauritius,39,61
+67,Zimbabwe,43,57
+68,Netherlands,64,36
+69,Lebanon,36,64
+70,Solomon Islands,45,55
+71,Austria,67,33
+72,Ethiopia,70,30
+73,Malawi,44,56
+74,Philippines,44,56
+75,Puerto Rico,44,56
+76,Faroe Islands,55,45
+77,Rwanda,40,60
+78,United Arab Emirates,44,56
+80,China,41,59
+81,Latvia,34,66
+82,Papua New Guinea,48,52
+83,Serbia,73,27
+84,Nigeria,28,72
+85,Portugal,28,72
+86,Belgium,64,36
+87,Nepal,54,46
+88,Åland Islands,50,50
+89,Norway,55,45
+90,Liberia,39,61
+91,Denmark,44,56
+92,Estonia,48,52
+93,Luxembourg,47,53
+94,Sierra Leone,23,77
+95,Suriname,45,55
+96,Georgia,31,69
+97,Sweden,52,48
+98,Tanzania,35,65
+99,Laos,62,38
+100,Gambia,29,71
+101,Malaysia,50,50
+102,Bahrain,49,51
+103,India,52,48
+104,Greece,42,58
+105,North Macedonia,48,52
+106,Czechia,55,45
+107,Slovenia,54,46
+108,Switzerland,45,55
+109,Sri Lanka,51,49
+110,Honduras,33,67
+111,Finland,49,51
+112,Armenia,31,69
+113,Qatar,47,53
+114,Croatia,49,51
+115,Albania,43,57
+116,Israel,60,40
+117,Greenland,55,45
+118,Brunei,51,49
+119,Mongolia,45,55
+120,Andorra,41,59
+121,French Polynesia,32,68
+122,Montenegro,52,48
+123,Somalia,70,30
+124,Panama,48,52
+125,Italy,37,63
+126,Liechtenstein,49,51
+127,Costa Rica,55,45
+128,Timor-Leste,51,49
+129,Uruguay,37,63
+130,Afghanistan,52,48
+131,Tunisia,22,78
+132,Germany,58,42
+133,Lithuania,50,50
+134,San Marino,48,52
+135,Hungary,50,50
+136,Slovakia,54,46
+137,Moldova,31,69
+138,Bulgaria,46,54
+139,Thailand,49,51
+140,Dominican Republic,42,58
+141,Kosovo,54,46
+142,Cape Verde,54,46
+143,Haiti,39,61
+144,Oman,48,52
+145,Bosnia & Herzegovina,62,38
+146,Nicaragua,39,61
+147,Djibouti,59,41
+148,Romania,46,54
+149,Burundi,42,58
+150,Bangladesh,58,42
+151,Mozambique,44,56
+152,Kuwait,47,53
+153,France,39,61
+154,South Korea,49,51
+155,New Caledonia,40,60
+156,Cameroon,43,57
+157,Pakistan,59,41
+158,Spain,47,53
+160,Mexico,59,41
+161,Angola,35,65
+162,Madagascar,36,64
+163,Colombia,65,35
+164,Vietnam,63,37
+165,Chile,43,57
+166,Cuba,36,64
+167,Venezuela,23,77
+168,Bolivia,42,58
+169,Indonesia,47,53
+170,Brazil,58,42
+171,El Salvador,53,47
+172,Guatemala,45,55
+173,Togo,38,62
+174,Paraguay,53,47
+175,Martinique,32,68
+176,Argentina,46,54
+177,Poland,45,55
+178,Guadeloupe,36,64
+179,Benin,41,59
+180,Taiwan,44,56
+181,Azerbaijan,49,51
+182,Jordan,49,51
+183,Réunion,36,64
+184,Congo - Kinshasa,54,46
+185,Ukraine,37,63
+186,Ecuador,51,49
+188,Russia,37,63
+189,Gabon,45,55
+191,Palestine,52,48
+192,Peru,51,49
+193,Belarus,40,60
+194,Niger,54,46
+195,Egypt,45,55
+196,Congo - Brazzaville,48,52
+197,Senegal,42,58
+198,Saudi Arabia,49,51
+199,Turkey,56,44
+200,Kazakhstan,41,59
+201,Morocco,46,54
+202,Côte d’Ivoire,45,55
+203,Mali,52,48
+204,Guinea,46,54
+205,Uzbekistan,42,58
+206,Kyrgyzstan,47,53
+207,Japan,49,51
+208,Iraq,53,47
+209,Turkmenistan,46,54
+210,Burkina Faso,47,53
+211,Iran,44,56
+212,Algeria,43,57
+213,Syria,44,56
+214,Mauritania,42,58
+215,Sudan,44,56
+216,Libya,50,50
+217,Tajikistan,43,57
+218,Yemen,54,46
