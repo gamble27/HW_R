@@ -1,5 +1,14 @@
-export XMODIFIERS=
-export GTK_IM_MODULE=
+# Title     : taks_3_4.R
+# Objective : task 3:
+#               lr, mr, oc for IBM, Apple, Amazon
+#             task 4: IBM
+#               lr, mr, oc boxplot
+#               metrics for boxplot calculated
+# Created by: olga
+# Created on: 24.10.19
+
+# export XMODIFIERS=
+# export GTK_IM_MODULE=
   
 library(graphics)
 
@@ -9,7 +18,7 @@ library(graphics)
 #  | || (_| \__ \   <   ___) |
 #   \__\__,_|___/_|\_\ |____/ 
 #                             
-#  
+#
 
 task_3 <- function(path_to_dataset){
   # read the data and set names for columns
@@ -35,12 +44,14 @@ task_3 <- function(path_to_dataset){
 }
 
 # datasets settings
-directory <- "~/Projects/domashki-R/lab_2/"
-tables = c("table_amzn.csv","table_ibm.csv","table_aapl.csv")  
+setwd( dirname(sys.frame(1)$ofile) )
+directory <- "/lab_2/"
+tables = c("table_amzn.csv","table_ibm.csv","table_aapl.csv")
 
 # call task 3
 for (name in tables){
-  task_3(paste(directory,name, sep=""))
+  # task_3(paste(directory,name, sep=""))
+  task_3(name)
 }
 
 #   _            _      _  _      ___ ____  __  __ 
@@ -51,8 +62,8 @@ for (name in tables){
 #                                                  
 #   
 
-df_ibm_mm_oc <- read.csv("~/Projects/domashki-R/lab_2/table_ibm_task_3_mm_oc.csv", header = TRUE)
-df_ibm_lr <- read.csv("~/Projects/domashki-R/lab_2/table_ibm_task_3_lr.csv", header = TRUE)
+df_ibm_mm_oc <- read.csv("table_ibm_task_3_mm_oc.csv", header = TRUE)
+df_ibm_lr <- read.csv("table_ibm_task_3_lr.csv", header = TRUE)
 
 # make plot in R
 

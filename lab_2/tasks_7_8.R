@@ -1,5 +1,5 @@
-export XMODIFIERS=
-export GTK_IM_MODULE=
+# export XMODIFIERS=
+# export GTK_IM_MODULE=
     
 library(graphics)
 
@@ -55,12 +55,12 @@ log_return <- function(path_to_dataset){
 #                                                           
 #  
 
-tables    <- list.files(path = "~/Projects/domashki-R/lab_2_ds",full.names = TRUE)
-companies <- list.files(path = "~/Projects/domashki-R/lab_2_ds",full.names = FALSE)
+tables    <- list.files(path = "~/Projects/HW_R/lab_2_ds",full.names = TRUE)
+companies <- list.files(path = "~/Projects/HW_R/lab_2_ds",full.names = FALSE)
 
 tables <- tables[1:20]
-compnies <- companies[1:20]
-companies <- c()
+compnies <- companies[1:20] # buffer
+companies <- c() # company names
 
 for (i in (1:20)){
   companies <- append(companies,substr(compnies[i], 7, nchar(compnies[i])-4))
@@ -84,7 +84,10 @@ for (i in (1:length(companies))){
   op_cl <- append(op_cl, log_opn_clo(tbl))
   lo_re <- append(lo_re, lr)
   
-  hist(mx_mn, )
+  # make histogram
+  # jpeg(paste("op_clo", companies[i],".jpeg", sep=""))
+  # hist(op_cl, probability = TRUE, legend(0,companies[i]))
+  # dev.off()
   
   for(j in (1:length(mm))){cmp1 <- append(cmp1,c(companies[i]))}
   for(j in (1:length(lr))){cmp2 <- append(cmp2,c(companies[i]))}
@@ -125,7 +128,9 @@ boxplot(log_ret~names, data=df_lr, outline = F)
 #                        |___/                     
 #  
 
-hist(, probability=TRUE, add=TRUE)
+# see line 89
+
+#hist(, probability=TRUE, add=TRUE)
 
 
 

@@ -1,5 +1,5 @@
-export XMODIFIERS=
-export GTK_IM_MODULE=
+# export XMODIFIERS=
+# export GTK_IM_MODULE=
   
 library(graphics)
 
@@ -35,7 +35,7 @@ task_3 <- function(path_to_dataset){
 }
 
 # datasets settings
-directory <- "~/Projects/domashki-R/lab_2/"
+directory <- "~/Projects/HW_R/lab_2/"
 tables = c("table_amzn.csv","table_ibm.csv","table_aapl.csv")  
 
 # call task 3
@@ -51,15 +51,15 @@ for (name in tables){
 #                                |/                              
 #    
 
-df_ibm_mm_oc <- read.csv("~/Projects/domashki-R/lab_2/table_ibm_task_3_mm_oc.csv", header = TRUE)
-df_ibm_lr <- read.csv("~/Projects/domashki-R/lab_2/table_ibm_task_3_lr.csv", header = TRUE)
+df_ibm_mm_oc <- read.csv("~/Projects/HW_R/lab_2/table_ibm_task_3_mm_oc.csv", header = TRUE)
+df_ibm_lr <- read.csv("~/Projects/HW_R/lab_2/table_ibm_task_3_lr.csv", header = TRUE)
 
 # make plot in R
 
 # outline: normal
-boxplot(df_ibm_mm_oc$log_max_min, df_ibm_mm_oc$log_opn_clo, df_ibm_lr$log_return, names = c("max/min", "opn/clo", "return"))
+boxplot(df_ibm_mm_oc$log_max_min, df_ibm_mm_oc$log_opn_clo, df_ibm_lr$log_return, names = c("max/min", "opn/clo", "return"), main="IBM")
 # outline: F
-boxplot(df_ibm_mm_oc$log_max_min, df_ibm_mm_oc$log_opn_clo, df_ibm_lr$log_return, names = c("max/min", "opn/clo", "return"), outline = F)
+boxplot(df_ibm_mm_oc$log_max_min, df_ibm_mm_oc$log_opn_clo, df_ibm_lr$log_return, names = c("max/min", "opn/clo", "return"), main="IBM", outline = F)
 
 # calculate metrics for plotting on scratch
 
@@ -81,3 +81,24 @@ sprintf("med: %f", median(df_ibm_lr$log_return))
 sprintf("mean: %f", mean(df_ibm_lr$log_return))
 print("quartiles:")
 print(quantile(df_ibm_lr$log_return, c(.09, .25, .5, .75, .91)))
+
+#  _            _       ___      ___ ____  __  __
+# | |_ __ _ ___| | __  / _ \ _  |_ _| __ )|  \/  |
+# | __/ _` / __| |/ / | (_) (_)  | ||  _ \| |\/| |
+# | || (_| \__ \   <   \__, |_   | || |_) | |  | |
+#  \__\__,_|___/_|\_\    /_/(_) |___|____/|_|  |_|
+
+# center the data first
+ds_mm = df_ibm_mm_oc$log_max_min - mean(df_ibm_mm_oc$log_max_min)
+ds_oc = df_ibm_mm_oc$log_opn_clo - mean(df_ibm_mm_oc$log_opn_clo)
+ds_lr = df_ibm_lr$log_return - mean(df_ibm_lr$log_return)
+
+# create solo histograms
+hist(ds_mm, col=rgb(1,0,0,1/4))
+hist(ds_oc, col=rgb(0,1,0,1/4))#, add = TRUE)
+hist(ds_lr, col=rgb(0,0,1,1/4))#, add = TRUE)
+
+# create collaborative histogram
+hist(ds_mm, col=rgb(1,0,0,1/2), xlim=c(-0.10,0.10))
+hist(ds_oc, col=rgb(0,1,0,1/4), add = TRUE)
+hist(ds_lr, col=rgb(0,0,1,1/4), add = TRUE)

@@ -1,5 +1,5 @@
-export XMODIFIERS=
-export GTK_IM_MODULE=
+# export XMODIFIERS=
+# export GTK_IM_MODULE=
     
 library(graphics)
 
@@ -53,10 +53,10 @@ log_return <- function(path_to_dataset){
 #  |  __/>  <| |_| | | (_| | (__| |_  | (_| | (_| | || (_| |
 #   \___/_/\_\\__|_|  \__,_|\___|\__|  \__,_|\__,_|\__\__,_|
 #                                                           
-#  
+#
 
-tables    <- list.files(path = "~/Projects/domashki-R/lab_2_ds",full.names = TRUE)
-companies <- list.files(path = "~/Projects/domashki-R/lab_2_ds",full.names = FALSE)
+tables    <- list.files(path = "~/Projects/HW_R/lab_2_ds",full.names = TRUE)
+companies <- list.files(path = "~/Projects/HW_R/lab_2_ds",full.names = FALSE)
 
 tables <- tables[1:20]
 compnies <- companies[1:20]
@@ -107,11 +107,11 @@ df_lr = data.frame(
 #                  |_|                
 #  
 
-boxplot(max_min~names, data=df_mm_oc)
-boxplot(op_cl~names, data=df_mm_oc)
-boxplot(log_ret~names, data=df_lr)
+boxplot(max_min~names, data=df_mm_oc, main="max_min")
+boxplot(op_cl~names, data=df_mm_oc, main="open_close")
+boxplot(log_ret~names, data=df_lr, main="log_return")
 
-boxplot(max_min~names, data=df_mm_oc, outline = F)
-boxplot(op_cl~names, data=df_mm_oc, outline = F)
-boxplot(log_ret~names, data=df_lr, outline = F)
+boxplot(max_min~names, data=df_mm_oc, main="max_min", outline = F)
+boxplot(op_cl~names, data=df_mm_oc, main="open_close", outline = F)
+boxplot(log_ret~names, data=df_lr, main="log_return", outline = F)
 
