@@ -35,7 +35,7 @@ plot(principals$scores[,3:4], main = "Components 3 and 4", col="purple")
 plot(principals$scores[, c(1,4)], main = "Components 1 and 4", col="purple")
 
 # plot components in 3D
-plot3d(principals$scores[, 1:3], col="blue", size=20)  # pls make it fullscreen on 4k :]
+# plot3d(principals$scores[, 1:3], col="blue", size=20)  # pls make it fullscreen on 4k :]
 # plot3d(principals$scores[, c(1,3,4)], col="blue", size=20)
 
 #  _       _        __    ___
@@ -45,10 +45,22 @@ plot3d(principals$scores[, 1:3], col="blue", size=20)  # pls make it fullscreen 
 # |_|\__,_|_.__/   \___/  (_)
 #
 
-# df.dist<-dist(principals$scores[,1:3])  # , method = "manhattan")
-# df.hclust<-hclust(df.dist,method ="single")
-# plot(as.dendrogram(df.hclust),leaflab="none")
-#
-# groups2<-cutree(df.hclust,k=2)
-# plot(principals$scores[,c(1,3)],col=c("red","blue")[groups2])
-# plot3d(principals$scores[, 1:3], col=c("red","blue")[groups2], size=20)  # pls make it fullscreen on 4k :]
+# try this for clustering
+df.dist<-dist(principals$scores[,4:5])
+df.hclust<-hclust(df.dist,method ="single")
+plot(as.dendrogram(df.hclust),leaflab="none")
+
+groups2<-cutree(df.hclust,k=2)
+plot(principals$scores[,c(4,5)],col=c("red","blue")[groups2])
+plot3d(principals$scores[, 3:5], col=c("red","blue")[groups2], size=20)  # pls make it fullscreen on 4k :]
+
+# so, lets check for 4,5 components
+dist2 <- ((principals$scores[,4])^2 + (principals$scores[,5])^2)^(0.5)
+hist(dist2) # here we will see clusters
+
+# now we form clusters using histogram
+clusters<-(dist2<3)+1
+
+# finally visualize
+plot3d(principals$scores[, 3:5], col=c("red","blue")[clusters], size=20)
+
