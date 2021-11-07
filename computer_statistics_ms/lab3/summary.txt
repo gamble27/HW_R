@@ -1,0 +1,46 @@
+> perform_ridge(train_full, "full")
+[1] "full"
+       Length Class  Mode
+coef   45000  -none- numeric
+scales     9  -none- numeric
+Inter      1  -none- numeric
+lambda  5000  -none- numeric
+ym         1  -none- numeric
+xm         9  -none- numeric
+GCV     5000  -none- numeric
+kHKB       1  -none- numeric
+kLW        1  -none- numeric
+                    arg         ati         avb         avp         avy         axp
+23.26747382 -0.50156931 -0.31313122  0.12738051  2.65102536 -1.25500052 -0.50395850
+        azo          ba         bac
+ 0.13862034  0.08025726  1.14142132
+     0.681
+0.03078835
+[1] "R squared: "
+          [,1]
+[1,] 0.6384516
+TheRPlugin_ProxyDevice
+                     3
+> perform_ridge(train_last, "last")
+[1] "last"
+       Length Class  Mode
+coef   45000  -none- numeric
+scales     9  -none- numeric
+Inter      1  -none- numeric
+lambda  5000  -none- numeric
+ym         1  -none- numeric
+xm         9  -none- numeric
+GCV     5000  -none- numeric
+kHKB       1  -none- numeric
+kLW        1  -none- numeric
+                    arg         ati         avb         avp         avy         axp
+ 7.44585723 -0.15872159  0.43334934  0.01840071  0.73425462 -0.35467651  0.22502805
+        azo          ba         bac
+-0.07083395  0.10738898  1.08762173
+     1.981
+0.01480321
+[1] "R squared: "
+          [,1]
+[1,] 0.6882275
+TheRPlugin_ProxyDevice
+                     3

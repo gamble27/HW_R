@@ -1,0 +1,119 @@
+[1] "full"
+Importance of components:
+                          Comp.1    Comp.2    Comp.3     Comp.4     Comp.5    Comp.6
+Standard deviation     2.1889023 1.6232561 0.8219644 0.72996211 0.37371853 0.3495392
+Proportion of Variance 0.5323659 0.2927734 0.0750695 0.05920496 0.01551839 0.0135753
+Cumulative Proportion  0.5323659 0.8251393 0.9002088 0.95941376 0.97493215 0.9885075
+                            Comp.7      Comp.8      Comp.9
+Standard deviation     0.241452811 0.170938477 0.126148751
+Proportion of Variance 0.006477718 0.003246663 0.001768167
+Cumulative Proportion  0.994985170 0.998231833 1.000000000
+
+Loadings:
+    Comp.1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8 Comp.9
+arg  0.421  0.202         0.149  0.137  0.240  0.267  0.650  0.429
+ati  0.318 -0.246  0.293 -0.722  0.304        -0.321  0.153
+avb  0.446                              0.314 -0.186 -0.664  0.470
+avp  0.184 -0.386  0.640  0.540        -0.322
+avy        -0.539 -0.486  0.162  0.640         0.162
+axp  0.390 -0.119 -0.505  0.139 -0.333 -0.450 -0.450  0.205
+azo  0.388  0.284         0.261  0.165  0.344 -0.151        -0.728
+ba   0.432 -0.102        -0.224 -0.242 -0.261  0.732 -0.201 -0.213
+bac        -0.590               -0.526  0.585         0.155
+
+               Comp.1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8 Comp.9
+SS loadings     1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000
+Proportion Var  0.111  0.111  0.111  0.111  0.111  0.111  0.111  0.111  0.111
+Cumulative Var  0.111  0.222  0.333  0.444  0.556  0.667  0.778  0.889  1.000
+TheRPlugin_ProxyDevice
+                     3
+[1] "full"
+Data: 	X dimension: 3905 9
+	Y dimension: 3905 1
+Fit method: svdpc
+Number of components considered: 6
+
+VALIDATION: RMSEP
+Cross-validated using 10 random segments.
+       (Intercept)  1 comps  2 comps  3 comps  4 comps  5 comps  6 comps
+CV           22.59    22.27    20.75    16.27    12.45    11.66    11.39
+adjCV        22.59    22.27    20.75    16.27    12.45    11.66    11.39
+
+TRAINING: % variance explained
+      1 comps  2 comps  3 comps  4 comps  5 comps  6 comps
+X      53.237    82.51    90.02    95.94    97.49    98.85
+apol    2.906    15.77    48.26    69.72    73.45    74.68
+NULL
+[1] "MSE: "
+[1] 193.8227
+[1] "R squared: "
+[1] 0.4164255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1] "last"
+Importance of components:
+                          Comp.1    Comp.2     Comp.3     Comp.4     Comp.5     Comp.6
+Standard deviation     2.0864039 1.6079466 0.94167012 0.73349975 0.51473587 0.39373491
+Proportion of Variance 0.4836757 0.2872769 0.09852696 0.05978021 0.02943922 0.01722524
+Cumulative Proportion  0.4836757 0.7709526 0.86947957 0.92925978 0.95869900 0.97592425
+                           Comp.7      Comp.8     Comp.9
+Standard deviation     0.33895509 0.280195959 0.15258265
+Proportion of Variance 0.01276562 0.008723308 0.00258683
+Cumulative Proportion  0.98868986 0.997413170 1.00000000
+
+Loadings:
+    Comp.1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8 Comp.9
+arg  0.331  0.341  0.318  0.344  0.339  0.192  0.477  0.113  0.402
+ati  0.210  0.460 -0.362 -0.183 -0.639         0.347  0.213
+avb  0.341        -0.460  0.733        -0.174 -0.275 -0.151
+avp  0.113  0.557        -0.287  0.307 -0.656 -0.245
+avy  0.443        -0.160 -0.252  0.268  0.333 -0.418  0.595
+axp  0.386 -0.221  0.460               -0.320  0.205  0.180 -0.630
+azo  0.259 -0.377 -0.496 -0.308  0.369 -0.138  0.493 -0.229
+ba   0.341 -0.386  0.193 -0.123 -0.393 -0.310 -0.139         0.642
+bac  0.434  0.142  0.188 -0.216 -0.101  0.417 -0.194 -0.686 -0.132
+
+               Comp.1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8 Comp.9
+SS loadings     1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000  1.000
+Proportion Var  0.111  0.111  0.111  0.111  0.111  0.111  0.111  0.111  0.111
+Cumulative Var  0.111  0.222  0.333  0.444  0.556  0.667  0.778  0.889  1.000
+TheRPlugin_ProxyDevice
+                     3
+
+
+[1] "last"
+Data: 	X dimension: 51 9
+	Y dimension: 51 1
+Fit method: svdpc
+Number of components considered: 7
+
+VALIDATION: RMSEP
+Cross-validated using 10 random segments.
+       (Intercept)  1 comps  2 comps  3 comps  4 comps  5 comps  6 comps  7 comps
+CV           1.525    1.374    1.113    1.054    1.088   0.9821   0.9102   0.9147
+adjCV        1.525    1.371    1.111    1.050    1.082   0.9785   0.9006   0.9065
+
+TRAINING: % variance explained
+      1 comps  2 comps  3 comps  4 comps  5 comps  6 comps  7 comps
+X       48.37    77.10    86.95    92.93    95.87    97.59    98.87
+apol    19.86    48.23    55.90    57.67    67.23    73.43    74.70
+NULL
+[1] "MSE: "
+[1] 2.96944
+[1] "R squared: "
+[1] 0.6406183
