@@ -1,0 +1,526 @@
+Call:
+glm(formula = Y.train ~ Magnesium + phenols + Flavanoids + NF,
+    family = binomial(), data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.7175  -0.7020   0.1535   0.6089   3.6596
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  8.52372    2.63634   3.233  0.00122 **
+Magnesium   -0.04575    0.01715  -2.668  0.00763 **
+phenols      0.88501    1.24952   0.708  0.47877
+Flavanoids  -2.88309    1.01773  -2.833  0.00461 **
+NF           4.37638    3.12649   1.400  0.16158
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 151.910  on 109  degrees of freedom
+Residual deviance:  95.634  on 105  degrees of freedom
+AIC: 105.63
+
+Number of Fisher Scoring iterations: 5
+
+Waiting for profiling to be done...
+                  2.5 %      97.5 %
+(Intercept)  3.64941126 14.11283638
+Magnesium   -0.08151663 -0.01346112
+phenols     -1.59162363  3.37344045
+Flavanoids  -5.03047508 -1.00288558
+NF          -1.58088326 10.80221880
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 42  9
+  1 10 49
+
+$dat.precision
+[1] 0.8235294
+
+$dat.recall
+[1] 0.8076923
+
+[1] "Test"
+$cf.table
+   y.hat
+y    0  1
+  0  7  1
+  1  0 12
+
+$dat.precision
+[1] 0.875
+
+$dat.recall
+[1] 1
+
+
+Call:
+glm(formula = Y.train ~ Magnesium + phenols + NF, family = binomial(),
+    data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.6704  -0.7791   0.1821   0.7437   2.6980
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  9.47010    2.59488   3.650 0.000263 ***
+Magnesium   -0.03895    0.01642  -2.372 0.017698 *
+phenols     -2.56430    0.61876  -4.144 3.41e-05 ***
+NF           3.77594    2.86351   1.319 0.187289
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 151.91  on 109  degrees of freedom
+Residual deviance: 105.28  on 106  degrees of freedom
+AIC: 113.28
+
+Number of Fisher Scoring iterations: 5
+
+Waiting for profiling to be done...
+                 2.5 %       97.5 %
+(Intercept)  4.7107874 14.985870422
+Magnesium   -0.0732952 -0.008173437
+phenols     -3.8825509 -1.432220229
+NF          -1.6906132  9.622018180
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 40 11
+  1 13 46
+
+$dat.precision
+[1] 0.7843137
+
+$dat.recall
+[1] 0.754717
+
+[1] "Test"
+$cf.table
+   y.hat
+y    0  1
+  0  6  2
+  1  2 10
+
+$dat.precision
+[1] 0.75
+
+$dat.recall
+[1] 0.75
+
+
+Call:
+glm(formula = Y.train ~ Magnesium + NF, family = binomial(),
+    data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.7604  -1.0494   0.4424   0.9032   2.7430
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  3.06890    1.82096   1.685  0.09193 .
+Magnesium   -0.05137    0.01681  -3.056  0.00224 **
+NF           6.78301    2.46099   2.756  0.00585 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 151.91  on 109  degrees of freedom
+Residual deviance: 127.76  on 107  degrees of freedom
+AIC: 133.76
+
+Number of Fisher Scoring iterations: 4
+
+Waiting for profiling to be done...
+                  2.5 %      97.5 %
+(Intercept) -0.40721599  6.78906783
+Magnesium   -0.08668744 -0.02048197
+NF           2.23878513 11.96022379
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 41 10
+  1 10 49
+
+$dat.precision
+[1] 0.8039216
+
+$dat.recall
+[1] 0.8039216
+
+[1] "Test"
+$cf.table
+   y.hat
+y    0  1
+  0  7  1
+  1  2 10
+
+$dat.precision
+[1] 0.875
+
+$dat.recall
+[1] 0.7777778
+
+
+Call:
+glm(formula = Y.train ~ NF, family = binomial(), data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.8163  -1.1238   0.5445   1.0622   1.7164
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)   -2.243      0.754  -2.974  0.00294 **
+NF             7.358      2.283   3.223  0.00127 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 151.91  on 109  degrees of freedom
+Residual deviance: 139.26  on 108  degrees of freedom
+AIC: 143.26
+
+Number of Fisher Scoring iterations: 3
+
+Waiting for profiling to be done...
+                2.5 %     97.5 %
+(Intercept) -3.806840 -0.8318892
+NF           3.144742 12.1542387
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 33 18
+  1 22 37
+
+$dat.precision
+[1] 0.6470588
+
+$dat.recall
+[1] 0.6
+
+[1] "Test"
+$cf.table
+   y.hat
+y   0 1
+  0 6 2
+  1 5 7
+
+$dat.precision
+[1] 0.75
+
+$dat.recall
+[1] 0.5454545
+
+
+===========================================================================
+> library(corrplot)
+corrplot 0.88 loaded
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> df <- read.csv2("/home/olga/Projects/HW_R/asymptotic_statistics/data/wine.csv", header=T)
+> df <- df[df$Site!=3,]
+> df$Site <- df$Site - 1
+> attach(df)
+> Y <- df$Site
+> X <- select(df, Magnesium, phenols, Flavanoids, NF)
+> n.train <- round(length(df$Site)*0.85)
+> idx.train <- sample(seq_along(df$Site), size = n.train)
+> X.train <- X[idx.train,]
+> Y.train <- Y[idx.train]
+> X.test <- X[-idx.train,]
+> Y.test <- Y[-idx.train]
+> labels <- c("Site", "Magnesium", "Phenols", "Flavanoids", "NF")
+> pairs(Y.train ~ X.train[,"Magnesium"] + X.train[,"phenols"] + X.train[,"Flavanoids"] + X.train[,"NF"],
++       col = ifelse(Y.train == 0,'red','blue'), pch = 19,
++       labels = labels)
+> pearson_corr  <- cor(df[idx.train,c("Site", "Magnesium", "phenols", "Flavanoids", "NF")], method="pearson")
+> corrplot(pearson_corr,
++          method = "number",
++          title="Pearson correlation",
++          tl.srt = 45,
++          tl.cex = .7, tl.col = "blue",
++          # order = "hclust", addrect=3,
++          mar=c(0,0,1,0))
+> classif.result <- function(y, y.hat)
++ {
++   cf.m <- table(y, y.hat)
++
++   list(
++     cf.table = cf.m,
++     dat.precision = cf.m[1,1]/(cf.m[1,1] + cf.m[1,2]),
++     dat.recall = cf.m[1,1]/(cf.m[1,1] + cf.m[2,1])
++   )
++ }
+> summary_glm <- function (glm_res){
++   print(summary(glm_res))
++
++   print(confint(glm_res))
++
++   print("Train")
++   print(classif.result(Y.train, (fitted.values(glm_res) > 0.5)*1))
++
++   print("Test")
++   prediction <- predict.glm(glm_res, X.test, type="response") > 0.5
++   print(classif.result(Y.test, prediction*1))
++ }
+> summary_glm(glm(Y.train ~ Magnesium + phenols + Flavanoids + NF,
++                 data = X.train,
++                 family = binomial()))
+
+Call:
+glm(formula = Y.train ~ Magnesium + phenols + Flavanoids + NF,
+    family = binomial(), data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.6339  -0.5950   0.0975   0.5094   4.0851
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  6.36972    2.76188   2.306 0.021094 *
+Magnesium   -0.03325    0.01779  -1.869 0.061592 .
+phenols      1.81051    1.17507   1.541 0.123373
+Flavanoids  -4.01896    1.05079  -3.825 0.000131 ***
+NF           8.30292    3.81385   2.177 0.029477 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 152.347  on 109  degrees of freedom
+Residual deviance:  84.518  on 105  degrees of freedom
+AIC: 94.518
+
+Number of Fisher Scoring iterations: 6
+
+Waiting for profiling to be done...
+                  2.5 %       97.5 %
+(Intercept)  1.19110494 12.155451913
+Magnesium   -0.06999245  0.001194363
+phenols     -0.39225910  4.279688023
+Flavanoids  -6.34171629 -2.161158444
+NF           1.30186438 16.435190921
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 46  7
+  1  8 49
+
+$dat.precision
+[1] 0.8679245
+
+$dat.recall
+[1] 0.8518519
+
+[1] "Test"
+$cf.table
+   y.hat
+y   0 1
+  0 5 1
+  1 5 9
+
+$dat.precision
+[1] 0.8333333
+
+$dat.recall
+[1] 0.5
+
+> summary_glm(glm(Y.train ~ Magnesium + phenols + NF,
++                 data = X.train,
++                 family = binomial()))
+
+Call:
+glm(formula = Y.train ~ Magnesium + phenols + NF, family = binomial(),
+    data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.5381  -0.8138   0.1798   0.7408   2.5831
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  7.58339    2.50294   3.030  0.00245 **
+Magnesium   -0.02598    0.01614  -1.610  0.10738
+phenols     -2.49514    0.60241  -4.142 3.44e-05 ***
+NF           4.58140    2.91267   1.573  0.11574
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 152.35  on 109  degrees of freedom
+Residual deviance: 106.38  on 106  degrees of freedom
+AIC: 114.38
+
+Number of Fisher Scoring iterations: 5
+
+Waiting for profiling to be done...
+                  2.5 %       97.5 %
+(Intercept)  2.92638158 12.831979961
+Magnesium   -0.05931711  0.004854068
+phenols     -3.78494432 -1.398026792
+NF          -0.95849894 10.561205777
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 40 13
+  1 11 46
+
+$dat.precision
+[1] 0.754717
+
+$dat.recall
+[1] 0.7843137
+
+[1] "Test"
+$cf.table
+   y.hat
+y    0  1
+  0  6  0
+  1  4 10
+
+$dat.precision
+[1] 1
+
+$dat.recall
+[1] 0.6
+
+> summary_glm(glm(Y.train ~ Magnesium + NF,
++          data = X.train,
++          family = binomial()))
+
+Call:
+glm(formula = Y.train ~ Magnesium + NF, family = binomial(),
+    data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.7365  -1.0260   0.3395   0.9708   2.5978
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  1.79924    1.89342   0.950  0.34198
+Magnesium   -0.04088    0.01665  -2.455  0.01407 *
+NF           7.39238    2.47424   2.988  0.00281 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 152.35  on 109  degrees of freedom
+Residual deviance: 129.36  on 107  degrees of freedom
+AIC: 135.36
+
+Number of Fisher Scoring iterations: 4
+
+Waiting for profiling to be done...
+                  2.5 %      97.5 %
+(Intercept) -1.83235010  5.63737752
+Magnesium   -0.07578705 -0.01017774
+NF           2.82607894 12.59879972
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 45  8
+  1 13 44
+
+$dat.precision
+[1] 0.8490566
+
+$dat.recall
+[1] 0.7758621
+
+[1] "Test"
+$cf.table
+   y.hat
+y    0  1
+  0  4  2
+  1  3 11
+
+$dat.precision
+[1] 0.6666667
+
+$dat.recall
+[1] 0.5714286
+
+> summary_glm(glm(Y.train ~ NF,
++          data=X.train,
++          family = binomial()))
+
+Call:
+glm(formula = Y.train ~ NF, family = binomial(), data = X.train)
+
+Deviance Residuals:
+    Min       1Q   Median       3Q      Max
+-1.7557  -1.0612   0.4123   0.9859   1.8566
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  -2.6080     0.7705  -3.385 0.000712 ***
+NF            8.3155     2.3458   3.545 0.000393 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 152.35  on 109  degrees of freedom
+Residual deviance: 136.42  on 108  degrees of freedom
+AIC: 140.42
+
+Number of Fisher Scoring iterations: 3
+
+Waiting for profiling to be done...
+                2.5 %    97.5 %
+(Intercept) -4.218047 -1.176886
+NF           4.009496 13.269084
+[1] "Train"
+$cf.table
+   y.hat
+y    0  1
+  0 37 16
+  1 20 37
+
+$dat.precision
+[1] 0.6981132
+
+$dat.recall
+[1] 0.6491228
+
+[1] "Test"
+$cf.table
+   y.hat
+y   0 1
+  0 4 2
+  1 7 7
+
+$dat.precision
+[1] 0.6666667
+
+$dat.recall
+[1] 0.3636364
